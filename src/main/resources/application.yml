@@ -1,0 +1,17 @@
+micronaut:
+  server:
+    cors:
+      enabled: true
+      configurations:
+        web:
+          allowedMethods:
+            - GET
+            - DELETE
+  caches:
+    qr-code-cache:
+      maximumSize: 20
+  router:
+    static-resources:
+      public:
+        enabled: true
+        paths: classpath:public
